@@ -1,0 +1,22 @@
+CompileFlags:
+  CompilationDatabase: .
+  Add:
+    - -isystem
+    - C:/Users/filip/.platformio/packages/toolchain-xtensa-esp-elf/xtensa-esp-elf/include
+    - -isystem
+    - C:/Users/filip/.platformio/packages/toolchain-xtensa-esp-elf/xtensa-esp-elf/sys-include
+    - -isystem
+    - C:/Users/filip/.platformio/packages/toolchain-xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include
+    - -isystem
+    - C:/Users/filip/.platformio/packages/toolchain-xtensa-esp-elf/picolibc/include
+  Remove:
+    - -mlongcalls
+    - -mdisable-hardware-atomics
+    - -mfix-esp32-psram-cache-issue
+    - -mfix-esp32-psram-cache-strategy=*
+    - -fno-tree-switch-conversion
+    - -fstrict-volatile-bitfields
+    - -fno-builtin-memcpy
+    - -fno-builtin-memset
+    - -fno-builtin-bzero
+    - -freorder-blocks
